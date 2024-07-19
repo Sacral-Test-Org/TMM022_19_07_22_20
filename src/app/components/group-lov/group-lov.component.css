@@ -1,0 +1,53 @@
+/* Styles for the Group LOV component */
+
+/* Container for the LOV */
+.lov-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header for the LOV */
+.lov-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* List of values */
+.lov-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.lov-list-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.lov-list-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Selected item */
+.lov-list-item.selected {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 10px;
+}

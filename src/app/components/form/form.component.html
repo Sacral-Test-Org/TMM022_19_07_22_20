@@ -1,0 +1,48 @@
+<div class="form-container">
+  <h1>T K A P - [IS]</h1>
+  <form>
+    <div class="form-group">
+      <label for="unitId">Unit ID</label>
+      <input type="text" id="unitId" name="unitId" (dblclick)="handleUnitIDDoubleClick()" (click)="handleUnitIDClick()" required>
+    </div>
+    <div class="form-group">
+      <label for="unitName">Unit Name</label>
+      <input type="text" id="unitName" name="unitName" required>
+    </div>
+    <div class="form-group">
+      <label for="groupId">Group ID</label>
+      <input type="text" id="groupId" name="groupId" (dblclick)="handleGroupIDDoubleClick()" (click)="handleGroupIDClick()" required>
+    </div>
+    <div class="form-group">
+      <label for="groupName">Group Name</label>
+      <input type="text" id="groupName" name="groupName" required>
+    </div>
+    <div class="form-group">
+      <label for="lineId">Line ID</label>
+      <input type="text" id="lineId" name="lineId" (dblclick)="handleLineIDDoubleClick()" (click)="handleLineIDClick()" required>
+    </div>
+    <div class="form-group">
+      <label for="lineDesc">Line Description</label>
+      <input type="text" id="lineDesc" name="lineDesc" required>
+    </div>
+    <div class="form-group">
+      <label for="partNo">Part Number</label>
+      <input type="text" id="partNo" name="partNo" (dblclick)="handlePartNoDoubleClick()" (click)="handlePartNoClick()" required>
+    </div>
+    <div class="form-group">
+      <label for="partDesc">Part Description</label>
+      <input type="text" id="partDesc" name="partDesc" (click)="handlePartDescClick()" required>
+    </div>
+    <div class="form-group">
+      <label for="partStatus">Part Status</label>
+      <input type="radio" id="partStatusA" name="partStatus" value="A" checked> A
+      <input type="radio" id="partStatusB" name="partStatus" value="B"> B
+    </div>
+    <div class="form-group">
+      <button type="button" id="saveButton" (click)="handleSaveButtonClick()" disabled>Save</button>
+      <button type="button" id="clearButton" (click)="handleClearButtonClick()">Clear</button>
+      <button type="button" id="editButton" (click)="handleEditButtonClick()">Edit</button>
+      <button type="button" id="exitButton" (click)="handleExitButtonClick()">Exit</button>
+    </div>
+  </form>
+</div>

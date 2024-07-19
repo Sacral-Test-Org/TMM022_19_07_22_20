@@ -1,0 +1,59 @@
+<div class="part-information">
+  <div>
+    <label for="sysdate">System Date:</label>
+    <input id="sysdate" type="text" [value]="sysdate" readonly />
+  </div>
+  <div>
+    <label for="screenname">Screen Name:</label>
+    <input id="screenname" type="text" [(ngModel)]="screenname" (change)="navigateToForm()" />
+  </div>
+  <div>
+    <label for="mode">Mode:</label>
+    <input id="mode" type="text" [value]="mode" readonly />
+  </div>
+  <div>
+    <label for="unit_id">Unit ID:</label>
+    <input id="unit_id" type="text" [(ngModel)]="unitId" />
+  </div>
+  <div>
+    <label for="unit_name">Unit Name:</label>
+    <input id="unit_name" type="text" [(ngModel)]="unitName" />
+  </div>
+  <div>
+    <label for="group_id">Group ID:</label>
+    <input id="group_id" type="text" [(ngModel)]="groupId" />
+  </div>
+  <div>
+    <label for="group_name">Group Name:</label>
+    <input id="group_name" type="text" [(ngModel)]="groupName" />
+  </div>
+  <div>
+    <label for="line_id">Line ID:</label>
+    <input id="line_id" type="text" [(ngModel)]="lineId" />
+  </div>
+  <div>
+    <label for="line_desc">Line Description:</label>
+    <input id="line_desc" type="text" [(ngModel)]="lineDesc" />
+  </div>
+  <div>
+    <label for="part_id">Part ID:</label>
+    <input id="part_id" type="text" [(ngModel)]="partId" />
+  </div>
+  <div>
+    <label for="partno">Part Number:</label>
+    <input id="partno" type="text" [(ngModel)]="partNo" />
+  </div>
+  <div>
+    <label for="part_desc">Part Description:</label>
+    <input id="part_desc" type="text" [(ngModel)]="partDesc" />
+  </div>
+  <div>
+    <label for="part_status">Part Status:</label>
+    <div id="part_status">
+      <input type="radio" id="status_a" name="part_status" value="A" [(ngModel)]="partStatus" />
+      <label for="status_a">A</label>
+      <input type="radio" id="status_b" name="part_status" value="B" [(ngModel)]="partStatus" />
+      <label for="status_b">B</label>
+    </div>
+  </div>
+</div>

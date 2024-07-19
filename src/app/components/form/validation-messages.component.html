@@ -1,0 +1,5 @@
+<div *ngIf="validationMessages && validationMessages.length" class="validation-messages">
+  <ul>
+    <li *ngFor="let message of validationMessages">{{ message }}</li>
+  </ul>
+</div>
